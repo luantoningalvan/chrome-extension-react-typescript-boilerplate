@@ -1,0 +1,19 @@
+{
+  "short_name": "My Extension",
+  "name": "My Extension",
+  "version": "1.1",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["app/background.js"]
+  },
+  "browser_action": {},
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["/static/css/app.css"],
+      "js": ["/static/js/app.js"]
+    }
+  ],
+  "web_accessible_resources": ["/static/media/*"],
+  "content_security_policy": "script-src 'self' 'sha256-GgRxrVOKNdB4LrRsVPDSbzvfdV4UqglmviH9GoBJ5jk='; object-src 'self'"
+}

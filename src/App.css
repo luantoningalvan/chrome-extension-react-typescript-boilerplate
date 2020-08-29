@@ -1,0 +1,15 @@
+#app {
+  width: calc(100% - 296px) !important;
+}
+
+#my-extension-root {
+  width: 296px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
